@@ -1,0 +1,15 @@
+# Armstrong Number is 153=1*1*1+5*5*5+3*3*3 =153
+#
+def armStrongNumber():
+      num=int(input("enter an number"))
+      arm=0
+      st=str(num)
+      length=len(st)
+      for i in st:
+            arm+=int(i)**length
+      if(arm==num):
+           print("Number are armStrong : ",arm,num)
+      else :
+            print("Numbers are not armStrong : ",arm,num)
+     
+armStrongNumber()
